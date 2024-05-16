@@ -1,0 +1,21 @@
+/* assets/css/styles.css */
+.navbar {
+    margin-bottom: 20px; /* 调整导航栏底部的间距 */
+  }
+  
+  .container {
+    padding-top: 20px; /* 增加内容顶部的间距 */
+  }
+  
+  .navbar-brand {
+    font-size: 24px; /* 增大导航栏公司名称的字体大小 */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 18px; /* 增大导航栏链接的字体大小 */
+  }
+  
+  body {
+    padding-top: 50px; /* 调整导航栏与页面顶部的间距 */
+  }
+  

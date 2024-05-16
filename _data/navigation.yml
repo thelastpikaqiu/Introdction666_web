@@ -1,11 +1,10 @@
 - name: Products
-  link: /product.html
+  link: /products.html
 - name: Culture
-  link: /index.html#culture
+  link: /culture.html
 - name: Careers
-  link: /index.html#careers
+  link: /careers.html
 - name: About Us
-  link: /index.html#about
+  link: /about.html
 - name: Contact
-  link: /index.html#contact
-
+  link: /contact.html

@@ -1,0 +1,51 @@
+/* 修改轮播图片中的文字样式 */
+.carousel-caption h5, .carousel-caption p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px; /* 调整字体大小 */
+  }
+  
+  /* 修改底栏内容样式 */
+  .footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+  }
+  
+  .footer p {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* 卡片样式 */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* 导航栏固定样式 */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+  }
+  
+  /* 商品卡片样式 */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  

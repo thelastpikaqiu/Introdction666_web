@@ -1,53 +1,17 @@
 <!-- _includes/navigation.html -->
-<style>
-  .navbar {
-    background-color: #fff; /* 设置背景色 */
-    border-bottom: 2px solid #eee; /* 添加底部边框 */
-  }
-
-  .navbar-brand {
-    font-size: 28px; /* 设置公司名称的字体大小 */
-    font-weight: bold; /* 加粗公司名称 */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* 设置公司名称的字体 */
-    color: #333; /* 设置文字颜色 */
-    text-decoration: none; /* 去除下划线 */
-  }
-
-  .nav-link {
-    font-size: 18px; /* 设置导航链接字体大小 */
-    color: #555; /* 设置导航链接文字颜色 */
-    text-decoration: none; /* 去除下划线 */
-    margin-right: 20px; /* 设置导航链接之间的右边距 */
-  }
-
-  .nav-link:hover {
-    color: #777; /* 设置鼠标悬停时的链接颜色 */
-  }
-</style>
-
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Glassware Company</a>
+    <a class="navbar-brand" href="#">Celestial Glass Artisans</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {% for item in site.data.navigation %}
         <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="culture.html">Culture</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="careers.html">Careers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link current-page" href="about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

@@ -8,59 +8,19 @@ title: Careers
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>招聘信息</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        .header {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .header img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .header h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: black; /* 颜色改为黑色 */
-            font-size: 48px; /* 字体大小 */
-            font-weight: bold; /* 字体加粗 */
-            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* 修改阴影颜色为白色，确保在黑色文字上有对比 */
-        }
-        .job {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-            margin-top: 0;
-        }
-        p {
-            margin: 5px 0;
-            line-height: 1.6;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-    </style>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/car.css">
 </head>
 <body>
-    <div class="header">
-        <img src="./assets/img/030.png" alt="公司标志">
-        <h1>玻璃厂招聘信息</h1>
-    </div>
 
+
+<div class="header">
+    <img src="./assets/img/030.png" alt="公司标志">
+    <h1>玻璃厂招聘信息</h1>
+</div>
+
+<div class="container my-5">
     <div class="job">
         <h2>生产操作员</h2>
         <p>我们正在寻找生产操作员加入我们的玻璃厂团队。</p>
@@ -149,5 +109,25 @@ title: Careers
         </ul>
         <p>联系邮箱: <a href="mailto:admin@example.com">admin@example.com</a></p>
     </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Contact Us</h3>
+        <p>Email: info@celestialglass.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Glass St, Crystal City, CC 12345</p>
+        <p>ICP: ICP 12345678</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

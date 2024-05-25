@@ -1,0 +1,42 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #343a40 !important;
+}
+
+.navbar-brand {
+  font-family: 'Georgia', serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c0c0c0 !important;
+}
+
+
+
+/* 修改底栏内容样式 */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center; /* 确保底栏内容居中 */
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.footer i {
+  margin-right: 5px;
+}

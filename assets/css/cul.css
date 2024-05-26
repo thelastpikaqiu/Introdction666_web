@@ -50,6 +50,8 @@ body {
 .card {
   border: 1px solid #ccc;
   padding: 20px;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
 }
 
 .container {

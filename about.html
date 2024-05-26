@@ -2,18 +2,35 @@
 layout: default
 title: About
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
 </head>
-<body>
-  <h1>About Us</h1>
-  <p>Welcome to Glassware Company, where we specialize in crafting high-quality glassware products.</p>
-  <p>Founded in 20XX, we have been committed to providing innovative solutions and excellent service to our customers.</p>
-  <p>Our mission is to...</p>
+<!-- 欢迎区域 -->
+<div class="welcome-area">
+    <img src="assets/img/full-width-image.jpg" alt="Elegant Glassware" class="full-width">
+    <p class="welcome-message">About Our Company</p>
+</div>
+
+<!-- 公司介绍区域 -->
+<div class="company-introduction">
+    <div class="image-left">
+        <img src="assets/img/center-left-image.jpg" alt="Our Craftsmen at Work">
+    </div>
+    <div class="text-right">
+        <h2>About us</h2>
+        <p>Since 1919, we have been committed to creating unparalleled glass products. Our mission is to enhance the quality and beauty of life through continuous innovation and exquisite craftsmanship.</p>
+    </div>
+</div>
+
+
+
 <!-- Footer -->
 <footer class="footer bg-dark text-white text-center">
   <div class="container">

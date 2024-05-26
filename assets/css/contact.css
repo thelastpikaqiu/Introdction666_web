@@ -23,56 +23,116 @@ body {
   color: #c0c0c0 !important;
 }
 
-.carousel-item {
-  height: 100vh;
+
+
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif;
 }
 
-.carousel-item img {
-  object-fit: cover;
-  height: 100%;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 20%;
-  text-align: left;
-  color: #fff;
-}
-
-.carousel-caption h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.carousel-caption p {
-  font-size: 1.5rem;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 10px;
+/* 欢迎区域样式 */
+.welcome-area {
+  position: relative;
   width: 100%;
+  height: auto; /* 根据实际图片高度调整 */
+}
+
+.welcome-area img.full-width {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.welcome-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 64px; /* 调整字体大小以适应设计 */
+  font-family: 'Great Vibes', cursive; /* 这是一种艺术字体的示例，可以更换 */
   text-align: center;
 }
 
-.scroll-down i {
-  font-size: 2rem;
+/* 载入Google字体库中的艺术字体 */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+.contact-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-form form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; /* 确保宽度包括内边距 */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info p {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 修改底栏内容样式 */
+.footer {
+  background-color: #343a40;
   color: #fff;
-}
-
-.section {
   padding: 60px 0;
+  text-align: center; /* 确保底栏内容居中 */
 }
 
-.section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.footer p {
+  margin-bottom: 5px;
 }
 
-.section p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+.footer i {
+  margin-right: 5px;
 }
+
 
 .footer {
   padding: 20px 0;
@@ -105,25 +165,6 @@ body {
   text-decoration: underline;
 }
 
-/* 修改轮播图片中的文字样式 */
-.carousel-caption h5, .carousel-caption p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px; /* 调整字体大小 */
-}
 
-/* 修改底栏内容样式 */
-.footer {
-  background-color: #343a40;
-  color: #fff;
-  padding: 60px 0;
-  text-align: center; /* 确保底栏内容居中 */
-}
 
-.footer p {
-  margin-bottom: 5px;
-}
 
-.footer i {
-  margin-right: 5px;
-}
